@@ -5,10 +5,22 @@ project (${TARGET})
 # The version number.
 set (Tutorial_VERSION_MAJOR 1)
 set (Tutorial_VERSION_MINOR 0)
- 
+
+#------------------------------option section--------------------------------
 # should we use our own math functions?
 # option必须在configure_file前设置
 option (USE_MYMATH "Use tutorial provided math implementation" ON) 
+
+#------------------------------check section---------------------------------
+# does this system provide the log and exp functions?
+#include (CheckFunctionExists)
+#引用module
+include (${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
+check_function_exists (log HAVE_LOG)
+check_function_exists (exp HAVE_EXP)
+
+#option和check 两个section都是负责生成一些变量
+#---------------------------------------------------------------
 
 # configure a header file to pass some of the CMake settings
 # to the source code
@@ -35,7 +47,7 @@ add_executable (${TARGET} main.cpp)
 
 target_link_libraries (${TARGET} ${EXTRA_LIBS})
 
-#-----------------------------------Install-----------------------------------
+#-----------------------------------Install section-----------------------------------
 # The CMake variable CMAKE_INSTALL_PREFIX is used to determine the root of where the files will be installed. 
 #重要：windows下CMAKE_INSTALL_PREFIX默认指向C:\Program Files (x86)，需要用管理员账户启动visual studio
 #此处改为本地目录，可以规避上述问题
@@ -46,7 +58,7 @@ install (TARGETS ${TARGET} DESTINATION bin)
 install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"        
          DESTINATION include)
 
-#----------------------------------Test---------------------------------------------
+#----------------------------------Test section---------------------------------------------
 # enable testing
 enable_testing ()
 
