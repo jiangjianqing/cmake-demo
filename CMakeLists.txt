@@ -62,9 +62,6 @@ install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
 # enable testing
 enable_testing ()
 
-#注:使用下一行#include(CTest)语句会加入太多vs项目
-#include(CTest)
-
 # does the application run
 #add_test (TutorialRuns Tutorial 25)
 
@@ -83,3 +80,18 @@ endmacro (do_test)
 do_test (25 "25 is 5")
 do_test (-25 "-25 is 0")
 do_test (0.0001 "0.0001 is 0.01")
+
+#----------------------------------Pack section---------------------------------------------
+#windows下使用nsis完成打包(nsis需要手动安装)
+# build a CPack driven installer package
+include (InstallRequiredSystemLibraries)
+#set (CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+set (CPACK_PACKAGE_VERSION_MAJOR "${Tutorial_VERSION_MAJOR}")
+set (CPACK_PACKAGE_VERSION_MINOR "${Tutorial_VERSION_MINOR}")
+include (CPack)
+
+
+
+#注:使用下一行#include(CTest)语句会加入太多vs项目
+# enable dashboard scripting
+#include(CTest)
