@@ -1,5 +1,5 @@
 #include "MathFunctions.h"
-//#include "TutorialConfig.h"
+#include "TutorialConfig.h"
 #include <stdio.h>
 
 // include the generated table
