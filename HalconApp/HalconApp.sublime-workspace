@@ -39,23 +39,6 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "src/CMakeLists.txt",
-			"settings":
-			{
-				"buffer_size": 569,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/main.cpp",
-			"settings":
-			{
-				"buffer_size": 419,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -95,11 +78,15 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/cz_jj/Desktop/halcon-test/HalconApp",
-		"/C/Users/cz_jj/Desktop/halcon-test/HalconApp/src"
+		"/D/git/cpp/cmake-demo/HalconApp",
+		"/D/git/cpp/cmake-demo/HalconApp/src"
 	],
 	"file_history":
 	[
+		"/D/git/cpp/cmake-demo/HalconApp/src/main.cpp",
+		"/D/git/cpp/cmake-demo/HalconApp/HalconApp.sublime-project",
+		"/D/git/cpp/cmake-demo/HalconApp/CMakeLists.txt",
+		"/D/git/cpp/cmake-demo/HalconApp/src/CMakeLists.txt",
 		"/C/Users/cz_jj/Desktop/halcon-test/HalconApp/src/main.cpp",
 		"/D/git/cpp/cmake-demo/CMakeLists.txt",
 		"/C/Users/cz_jj/Desktop/halcon-test/HalconApp/src/CMakeLists.txt",
@@ -189,7 +176,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -223,7 +210,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -251,67 +238,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2361.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/CMakeLists.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 569,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								568,
-								568
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CMake/CMake.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 321.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/main.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 419,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								279,
-								279
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 18.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -354,7 +284,7 @@
 	},
 	"output.exec":
 	{
-		"height": 200.0
+		"height": 324.0
 	},
 	"output.files_to_be_deleted":
 	{
