@@ -63,3 +63,4 @@ GeneratedFiles/
 .vs/
 *.vcxproj.user*
 _lib/
+*.sublime-workspace
