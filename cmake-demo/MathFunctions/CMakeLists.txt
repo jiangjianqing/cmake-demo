@@ -23,6 +23,9 @@ SET(LIB_SRC
 	mysqrt.cxx ${CMAKE_CURRENT_BINARY_DIR}/Table.h
 )  
 
+#设置字符集  
+add_definitions(-DUNICODE -D_UNICODE) 
+
 #搜索目录下的文件名并存入变量（可能会放入多余文件名）
 #aux_source_directory(. LIB_SRC)
 
