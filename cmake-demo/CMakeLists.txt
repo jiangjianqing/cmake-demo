@@ -10,6 +10,8 @@ set (Tutorial_VERSION_MINOR 0)
 # should we use our own math functions?
 # option必须在configure_file前设置
 option (USE_MYMATH "Use tutorial provided math implementation" ON) 
+#option(USE_32BITS "Compile for 32bits processors(linux only)" OFF)
+#option(BUILD_USE_64BITS "Compile for 64bits processors" ON)
 
 #------------------------------check section---------------------------------
 # does this system provide the log and exp functions?

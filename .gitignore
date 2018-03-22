@@ -64,3 +64,4 @@ GeneratedFiles/
 *.vcxproj.user*
 _lib/
 *.sublime-workspace
+CMakeLists.txt.user
