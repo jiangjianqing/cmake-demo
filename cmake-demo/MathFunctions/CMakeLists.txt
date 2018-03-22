@@ -64,5 +64,5 @@ install(TARGETS MathFunctions
         ARCHIVE DESTINATION ${CMAKE_BINARY_DIR}/lib/static)
 
 #安装到指定位置
-install(TARGETS MathFunctions 
-        RUNTIME DESTINATION ${PROJECT_BINARY_DIR})
+#install(TARGETS MathFunctions
+#        RUNTIME DESTINATION ${PROJECT_BINARY_DIR})
