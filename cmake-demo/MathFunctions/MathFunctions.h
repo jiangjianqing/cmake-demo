@@ -1,14 +1,17 @@
 #ifndef __ADD_H__
 #define __ADD_H__  
 
-#ifdef MathFunctions_EXPORTS
-#define WIN32_API __declspec(dllexport)
+#ifdef WIN32
+    #ifdef MathFunctions_EXPORTS
+    #define DLLAPI __declspec(dllexport)
+    #else
+    #define DLLAPI __declspec(dllimport)
+    #endif
 #else
-#define WIN32_API __declspec(dllimport)
+    #define DLLAPI extern "C"
 #endif
 
-
-WIN32_API double mysqrt(double x);
+DLLAPI double mysqrt(double x);
 
 
 #endif

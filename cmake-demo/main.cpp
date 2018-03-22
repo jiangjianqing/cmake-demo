@@ -1,5 +1,8 @@
 #include <iostream>
+#include <stdio.h>  //for fprintf stdout
+#include <stdlib.h> //for atof
 #include "TutorialConfig.h"
+
 #ifdef USE_MYMATH
 #include "MathFunctions.h"
 #endif
